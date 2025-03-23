@@ -5662,3 +5662,61 @@ blockquote {
 #w-node-_310c731f-3f89-2420-992b-cf3f090caa45-090caa36 {
   grid-area: span 2 / span 1 / span 2 / span 1;
 }
+
+
+/* Keyframe animation for fading in elements */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Apply fadeIn animation to sections */
+.section {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframe animation for sliding in elements */
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* Apply slideIn animation to navbar */
+.navbar {
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Transition on hover for buttons */
+.button-with-circle-icon {
+  transition: transform 0.3s;
+}
+
+.button-with-circle-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Additional animations for other elements */
+@keyframes bounceIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.hero-image {
+  animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.posts-card {
+  animation: fadeUp 1s ease-in-out;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
